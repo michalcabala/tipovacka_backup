@@ -1,0 +1,40 @@
+[08-Jun-2024 01:09:23 Europe/Bratislava] PHP Fatal error:  Uncaught TypeError: CKSource\CKFinder\Filesystem\File\UploadedFile::__construct(): Argument #1 ($uploadedFile) must be of type Symfony\Component\HttpFoundation\File\UploadedFile, array given, called in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/FileUpload.php on line 67 and defined in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php:60
+Stack trace:
+#0 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/FileUpload.php(67): CKSource\CKFinder\Filesystem\File\UploadedFile->__construct()
+#1 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(157): CKSource\CKFinder\Command\FileUpload->execute()
+#2 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(79): Symfony\Component\HttpKernel\HttpKernel->handleRaw()
+#3 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(515): Symfony\Component\HttpKernel\HttpKernel->handle()
+#4 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(332): CKSource\CKFinder\CKFinder->handle()
+#5 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/connector.php(20): CKSource\CKFinder\CKFinder->run()
+#6 {main}
+  thrown in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php on line 60
+[08-Jun-2024 01:09:55 Europe/Bratislava] PHP Fatal error:  Uncaught TypeError: CKSource\CKFinder\Filesystem\File\UploadedFile::__construct(): Argument #1 ($uploadedFile) must be of type Symfony\Component\HttpFoundation\File\UploadedFile, array given, called in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/FileUpload.php on line 67 and defined in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php:60
+Stack trace:
+#0 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/FileUpload.php(67): CKSource\CKFinder\Filesystem\File\UploadedFile->__construct()
+#1 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(157): CKSource\CKFinder\Command\FileUpload->execute()
+#2 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(79): Symfony\Component\HttpKernel\HttpKernel->handleRaw()
+#3 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(515): Symfony\Component\HttpKernel\HttpKernel->handle()
+#4 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(332): CKSource\CKFinder\CKFinder->handle()
+#5 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/connector.php(20): CKSource\CKFinder\CKFinder->run()
+#6 {main}
+  thrown in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php on line 60
+[08-Jun-2024 01:11:30 Europe/Bratislava] PHP Fatal error:  Uncaught TypeError: CKSource\CKFinder\Filesystem\File\UploadedFile::__construct(): Argument #1 ($uploadedFile) must be of type Symfony\Component\HttpFoundation\File\UploadedFile, array given, called in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/FileUpload.php on line 67 and defined in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php:60
+Stack trace:
+#0 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/FileUpload.php(67): CKSource\CKFinder\Filesystem\File\UploadedFile->__construct()
+#1 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(157): CKSource\CKFinder\Command\FileUpload->execute()
+#2 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(79): Symfony\Component\HttpKernel\HttpKernel->handleRaw()
+#3 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(515): Symfony\Component\HttpKernel\HttpKernel->handle()
+#4 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(332): CKSource\CKFinder\CKFinder->handle()
+#5 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/connector.php(20): CKSource\CKFinder\CKFinder->run()
+#6 {main}
+  thrown in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php on line 60
+[08-Jun-2024 01:11:48 Europe/Bratislava] PHP Fatal error:  Uncaught TypeError: CKSource\CKFinder\Filesystem\File\UploadedFile::__construct(): Argument #1 ($uploadedFile) must be of type Symfony\Component\HttpFoundation\File\UploadedFile, array given, called in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/FileUpload.php on line 67 and defined in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php:60
+Stack trace:
+#0 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/FileUpload.php(67): CKSource\CKFinder\Filesystem\File\UploadedFile->__construct()
+#1 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(157): CKSource\CKFinder\Command\FileUpload->execute()
+#2 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(79): Symfony\Component\HttpKernel\HttpKernel->handleRaw()
+#3 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(515): Symfony\Component\HttpKernel\HttpKernel->handle()
+#4 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(332): CKSource\CKFinder\CKFinder->handle()
+#5 /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/connector.php(20): CKSource\CKFinder\CKFinder->run()
+#6 {main}
+  thrown in /home5/pcefansc/tipovacka.hcpcefans.cz/secure/_scripts/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php on line 60

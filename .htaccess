@@ -1,0 +1,21 @@
+#php_flag display_errors On
+ErrorDocument 404 "https://tipovacka.hcpcefans.cz"
+ErrorDocument 403 "https://tipovacka.hcpcefans.cz"
+
+# nastaveni verze php pro hosting, nefunguje lokalne
+#AddHandler application/x-httpd-lsphp74 .php
+
+RewriteEngine on
+# all redirection HTTP -> HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# lokalne tyto tri radky comment
+#redirection no www -> https://www.
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^(.*)/index/(.*)/(.*)/(.*)$ /index.php?section=$2&category=$3&text=$4&lang=$1 [L,QSA]
+RewriteRule ^(.*)/index/(.*)/(.*)$ /index.php?section=$2&category=$3&lang=$1 [L,QSA]
+RewriteRule ^(.*)/index/(.*)$ /index.php?section=$2&lang=$1 [L,QSA]
+RewriteRule ^(.*)/index /index.php?lang=$1 [L,QSA]
+

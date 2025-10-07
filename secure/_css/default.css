@@ -1,0 +1,130 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+html { }
+body {  font-family: 'Roboto', sans-serif;  height: 100vh; padding-top: 0;
+  background: url(../img/login_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+a {     color: #92badd;  display:inline-block;  text-decoration: none;  font-weight: 400;}
+h2 {    text-align: center;  font-size: 16px;  font-weight: 600;  text-transform: uppercase;  display:inline-block;  margin: 40px 8px 10px 8px;  color: #cccccc;}
+h2.inactive {  color: #cccccc;}
+h2.active {  color: #0d0d0d;  border-bottom: 2px solid #5fbae9;}
+
+.wrapper {  display: flex; opacity: 0.8;  align-items: center;  flex-direction: column;  justify-content: center;  width: 100%;  min-height: 100%;  padding: 20px;}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;   border-radius: 10px 10px 10px 10px;  background: #fff;  padding: 30px;  width: 90%;  max-width: 450px;
+  position: relative;  padding: 0px;  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);  text-align: center;}
+
+#formFooter {
+  background-color: #f6f6f6;  border-top: 1px solid #dce8f1;  padding: 25px;  text-align: center;  -webkit-border-radius: 0 0 10px 10px;  border-radius: 0 0 10px 10px;}
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #56baed;   border: none;  color: white;  padding: 15px 80px;  text-align: center;  text-decoration: none;
+  display: inline-block;  text-transform: uppercase;  font-size: 13px;  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;  border-radius: 5px 5px 5px 5px;  margin: 5px 20px 40px 20px;  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;  -ms-transition: all 0.3s ease-in-out;  -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out;}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #39ace7;}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);  -webkit-transform: scale(0.95);  -o-transform: scale(0.95);  -ms-transform: scale(0.95);  transform: scale(0.95);}
+
+input[type=text], input[type=password], input[type=date], input[type=datetime-local], input[type=number], input[type=email] {
+  background-color: #f6f6f6;  border: none;  color: #0d0d0d;  padding: 15px 32px;  text-align: center;  text-decoration: none;
+  display: inline-block;  font-size: 16px;  margin: 5px;  width: 85%;  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;  -moz-transition: all 0.5s ease-in-out;  -ms-transition: all 0.5s ease-in-out;  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;  -webkit-border-radius: 5px 5px 5px 5px;  border-radius: 5px 5px 5px 5px;}
+
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=number]:focus, input[type=email]:focus {
+  background-color: #fff;  border-bottom: 2px solid #5fbae9;}
+
+input[type=text]:placeholder {
+  color: #cccccc;}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;  animation-name: fadeInDown;  -webkit-animation-duration: 1s;  animation-duration: 1s;  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;  -webkit-animation:fadeIn ease-in 1;  -moz-animation:fadeIn ease-in 1;  animation:fadeIn ease-in 1;
+  -webkit-animation-fill-mode:forwards;  -moz-animation-fill-mode:forwards;  animation-fill-mode:forwards;  -webkit-animation-duration:1s;  -moz-animation-duration:1s;
+  animation-duration:1s;}
+
+.fadeIn.first {  -webkit-animation-delay: 0.4s;  -moz-animation-delay: 0.4s;  animation-delay: 0.4s;}
+.fadeIn.second {  -webkit-animation-delay: 0.6s;  -moz-animation-delay: 0.6s;  animation-delay: 0.6s;}
+.fadeIn.third {  -webkit-animation-delay: 0.8s;  -moz-animation-delay: 0.8s;  animation-delay: 0.8s;}
+.fadeIn.fourth {  -webkit-animation-delay: 1s;  -moz-animation-delay: 1s;  animation-delay: 1s;}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {  display: block;  left: 0;  bottom: -10px;  width: 0;  height: 2px;  background-color: #56baed;  content: "";  transition: width 0.2s;}
+.underlineHover:hover {  color: #0d0d0d;}
+.underlineHover:hover:after{  width: 100%;}
+*:focus {  outline: none;}
+
+/* Dropzone file upload */
+#actions {  margin: 2em 0;}
+div.table {display: table;}
+div.table .file-row {display: table-row;}
+div.table .file-row > div { display: table-cell;  vertical-align: top;  border-top: 1px solid #ddd;  padding: 8px;}
+div.table .file-row:nth-child(odd) {  background: #f9f9f9;}
+#total-progress {  opacity: 0;  transition: opacity 0.3s linear;}
+#previews .file-row.dz-success .progress {   opacity: 0;  transition: opacity 0.3s linear;}
+#previews .file-row .delete {  display: none;}
+#previews .file-row.dz-success .start, #previews .file-row.dz-success .cancel {  display: none;}
+#previews .file-row.dz-success .delete {  display: block;}
+
+/* Image grid system */
+.img-container-grid{display: flex; flex-wrap: wrap;}
+.img-container-grid-flex{display:flex;flex-wrap: wrap;}
+.smallsquare{max-width: 200px; height: auto; flex: 0 0 80%; padding-top: 200px; display: grid; position: relative;}
+.smallsquare_edit_button{}
+.smallsquare1{max-width:25%;height:auto;flex:0 0 25%;padding-top:20%;display:grid;position:relative;}
+.h_rectangle{max-width: 40%;flex: 0 0 40%;padding-top:20%;position:relative;}
+.bigsquare{max-width:40%;height:auto;flex:0 0 40%;padding-top:40%;display:grid;position:relative;}
+.bigsquare_blank{max-width:40%;height:auto;flex:0 0 40%;display:flex;flex-wrap: wrap;}
+.inner_square{max-width:50%;flex: 0 0 50%;height:50%;position:relative;}
+.v_rectangle{max-width: 20%;flex: 0 0 20%;padding-top:40%;position:relative;}
+.img-grid-c{width:100%;height:100%;top:0;left:0;position:absolute;object-fit:cover;object-position:center;padding:2.5px;}
+
+
+/* bootstrap SM a nižší */
+@media all and (max-width: 575px) {
+
+}
+/* end of bootstrap SM a nižší */
+
+/* bootstrap MD a nižší */
+@media all and (max-width: 767px) {
+
+}
+/* end of bootstrap MD a nižší */
+
+/* bootstrap LG a nižší */
+@media all and (max-width: 991px) {
+
+}
+/* end of bootstrap LG a nižší */
+
+/* bootstrap SM a vyšší */
+@media all and (min-width: 576px) {
+  .nav-item .nav-link { font-size: .85rem;}
+}
+/* end of bootstrap SM */
+
+@media all and (min-width: 768px) {
+
+}
+@media all and (min-width: 992px) {
+
+}
+@media all and (min-width: 1200px) {
+
+}

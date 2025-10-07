@@ -1,0 +1,210 @@
+/********** Template CSS **********/
+:root {
+    --primary: #14275e;
+    --danger: #e74a3b;
+    --light: #F1F8FF;
+    --dark: #212529;
+
+}
+* {font-family: Nunito, sans-serif;}
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {margin-top: 0; margin-bottom: 0.5rem; font-weight: 700; line-height: 1.2;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+h1 {color: var(--light) !important; padding: 10px 0; letter-spacing: 0.0625em; font-size: 1.25rem; text-transform: uppercase; outline: none; font-weight: normal;}
+h4 {font-weight: 400; text-transform: uppercase;}
+h5 {font-weight: 300;}
+
+body {margin: 0; background-color: var(--light); -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+header {display: block;}
+
+.back-to-top {position: fixed; display: none; right: 45px; bottom: 45px; z-index: 99;}
+
+/*** Spinner ***/
+#spinner {opacity: 0; visibility: hidden; transition: opacity .5s ease-out, visibility 0s linear .5s; z-index: 99999;}
+#spinner.show {transition: opacity .5s ease-out, visibility 0s linear 0s; visibility: visible; opacity: 1;}
+
+/*** Button ***/
+.btn {font-family: Nunito, sans-serif; font-weight: 500; text-transform: uppercase; transition: .5s;}
+.btn.btn-primary, .btn.btn-secondary {color: #FFFFFF;}
+.btn-square {width: 38px; height: 38px;}
+.btn-sm-square {width: 32px; height: 32px;}
+.btn-lg-square {width: 48px; height: 48px;}
+.btn-square, .btn-sm-square, .btn-lg-square {padding: 0; display: flex; align-items: center; justify-content: center; font-weight: normal; border-radius: 2px;}
+
+/* Login form */
+.wrapper {  display: flex;  align-items: center;  flex-direction: column;  justify-content: center;  width: 100%;  min-height: 100%;  padding: 20px;}
+#formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;   border-radius: 10px 10px 10px 10px;  background: #fff;  padding: 30px;  width: 90%;  max-width: 450px;
+    position: relative; -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);  text-align: center;}
+#formFooter {  background-color: #f6f6f6;  border-top: 1px solid #dce8f1;  padding: 25px;  text-align: center;  -webkit-border-radius: 0 0 10px 10px;  border-radius: 0 0 10px 10px;}
+.fadeInDown { -webkit-animation-name: fadeInDown;  animation-name: fadeInDown;  -webkit-animation-duration: 1s;  animation-duration: 1s;  -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;}
+#formContent input[type=button], #formContent input[type=submit], #formContent input[type=reset]  {
+    background-color: #56baed;   border: none;  color: white;  padding: 15px 80px;  text-align: center;  text-decoration: none;
+    display: inline-block;  text-transform: uppercase;  font-size: 13px;  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;  border-radius: 5px 5px 5px 5px;  margin: 5px 20px 40px 20px;  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;  -ms-transition: all 0.3s ease-in-out;  -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out;}
+#formContent input[type=button]:hover, #formContent input[type=submit]:hover, #formContent input[type=reset]:hover  {  background-color: #39ace7;}
+#formContent input[type=button]:active, #formContent input[type=submit]:active, #formContent input[type=reset]:active  {  -moz-transform: scale(0.95);  -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);  -ms-transform: scale(0.95);  transform: scale(0.95);}
+#formContent input[type=text], #formContent input[type=password] {
+    background-color: #f6f6f6;  border: none;  color: #0d0d0d;  padding: 15px 32px;  text-align: center;  text-decoration: none;
+    display: inline-block;  font-size: 16px;  margin: 5px;  width: 85%;  border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;  -moz-transition: all 0.5s ease-in-out;  -ms-transition: all 0.5s ease-in-out;  -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;  -webkit-border-radius: 5px 5px 5px 5px;  border-radius: 5px 5px 5px 5px;}
+#formContent input[type=text]:focus, #formContent input[type=password]:focus {  background-color: #fff;  border-bottom: 2px solid #5fbae9;}
+
+/* Form pořadí */
+.formPoradi input[type=button], .formPoradi input[type=submit] {
+    background-color: #56baed; color: white; padding: 15px 30px; text-align: center; text-decoration: none; text-transform: uppercase; font-size: 16px;
+    display: inline-block; margin: 5px; border: 2px solid #f6f6f6;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;  border-radius: 5px 5px 5px 5px;   -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;  -ms-transition: all 0.3s ease-in-out;  -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out;}
+.formPoradi input[type=button]:hover, .formPoradi input[type=submit]:hover  {background-color: #a439e7;}
+.formPoradi input[type=text], .formPoradi input[type=number] {
+    background-color: #f6f6f6; color: #0d0d0d;  padding: 15px 30px;  text-align: center;  text-decoration: none;
+    display: inline-block;  font-size: 16px;  margin: 5px; border: 2px solid white;
+    -webkit-transition: all 0.5s ease-in-out;  -moz-transition: all 0.5s ease-in-out;  -ms-transition: all 0.5s ease-in-out;  -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;  -webkit-border-radius: 5px 5px 5px 5px;  border-radius: 5px 5px 5px 5px;}
+.formPoradi input[type=number] {border: 2px solid var(--danger);}
+
+/* Grid zapasy a form zapasy */
+.tip_zapas .card .card-header {padding: 5px;}
+.tip_zapas .card .card-body {padding: 5px;}
+.tip_zapas .card .card-body .card-title {font-weight: 700;}
+.tip_zapas .card .card-footer {padding: 0px 0px 5px 0px;}
+.tip_zapas .card .card-footer div {font-size: 12px; margin-bottom: 5px;}
+.tip_zapas .card .card-footer form {margin: 0px auto; display: block;}
+.tip_zapas input { width: 75px;}
+.tip_zapas input[type=number] {margin: 0px 5px; background-color: #f6f6f6; color: #0d0d0d; text-align: center; text-decoration: none; display: inline-block; font-size: 14px;
+    border: 2px solid white;
+    -webkit-transition: all 0.5s ease-in-out;  -moz-transition: all 0.5s ease-in-out;  -ms-transition: all 0.5s ease-in-out;  -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;  -webkit-border-radius: 5px 5px 5px 5px;  border-radius: 5px 5px 5px 5px;}
+.tip_zapas input[type=submit] {width: 100px; margin: 0px 5px; background-color: #56baed; color: white; text-align: center; text-decoration: none; text-transform: uppercase;
+    font-size: 14px; display: inline-block; border: 2px solid #f6f6f6;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;  border-radius: 5px 5px 5px 5px;   -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;  -ms-transition: all 0.3s ease-in-out;  -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out;}
+.tip_zapas input[type=submit]:hover {background-color: #a439e7;}
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-item .testimonial-item, .testimonial-carousel .owl-item.center .testimonial-item * {transition: .5s; -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);}
+.testimonial-carousel .owl-item.center .testimonial-item {background: var(--danger) !important;  border-color: var(--danger) !important;}
+.testimonial-carousel .owl-item.center .testimonial-item * {color: var(--light) !important;}
+.testimonial-carousel .owl-dots {margin-top: 24px; display: flex; align-items: flex-end; justify-content: center;}
+.testimonial-carousel button.owl-dot {position: relative; display: inline-block; margin: 0 5px; width: 15px; height: 15px; border: 1px solid var(--danger);
+    border-radius: 15px; transition: .5s;}
+.testimonial-carousel button.owl-dot.active {background: var(--danger); border-color: var(--light);}
+.testimonial-carousel .owl-item .testimonial-item {height: 14vh;}
+
+.news-item-hover a:hover {background: #f6c23e; opacity: 0.6;}
+.news-item p, .testimonial-item p {-webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden;}
+.news-item h5, .testimonial-item h5 {line-height: 30px; font-size: 17px; -webkit-line-clamp: 1; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden;}
+
+    /*** Navbar ***/
+.navbar-dark .navbar-nav .nav-link {position: relative; margin-left: 25px; padding: 10px 0; letter-spacing: 0.0625em; font-size: 1.25rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: var(--light) !important; text-transform: uppercase; outline: none; transition: .5s;}
+.sticky-top.navbar-dark .navbar-nav .nav-link {padding: 10px 0;}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {color: var(--danger) !important;}
+.navbar-dark .navbar-nav .nav-link:active {color: var(--danger) !important;}
+.navbar-dark .navbar-brand img {max-height: 60px; transition: .5s;}
+.sticky-top.navbar-dark .navbar-brand img {max-height: 50px;}
+
+/*** Header ***/
+header.masthead {padding-top: 6rem; padding-bottom: 5rem; text-align: center; color: var(--light); background-image: url(/images/_design/bg-sokotop-bw.png);
+    background-repeat: no-repeat; background-attachment: scroll; background-position: center top; background-size: cover;}
+header.masthead .masthead-subheading { font-size: 1.5rem; font-style: italic; line-height: 1.5rem; margin-bottom: 25px;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+header.masthead .masthead-heading {font-size: 3.25rem; font-weight: 700; line-height: 3.25rem; margin-bottom: 1rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+
+/*** Section ***/
+.page-section {padding: 0.5rem 0 1rem 0;}
+.page-section h2.section-heading, .page-section .section-heading.h2 {font-size: 2.5rem; margin-top: 0; margin-bottom: 1rem;}
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {font-size: 1rem; font-weight: 400; font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; margin-bottom: 2rem;}
+
+/*** Tipovacky ***/
+.tipovacky-item {max-width: 26rem; margin-left: auto; margin-right: auto;}
+.tipovacky-item .tipovacky-link {position: relative; display: block; margin: 0 auto;}
+.tipovacky-item .tipovacky-link .tipovacky-hover {display: flex; position: absolute; width: 100%; height: 100%;background: rgba(255, 200, 0, 0.9);
+    align-items: center; justify-content: center; opacity: 0; transition: opacity ease-in-out 0.25s;}
+.tipovacky-item .tipovacky-link .tipovacky-hover .tipovacky-hover-content {font-size: 1.25rem; color: white;}
+.tipovacky-item .tipovacky-link:hover .tipovacky-hover {opacity: 1;}
+.tipovacky-item .tipovacky-caption {padding: 0.5rem; text-align: center; background-color: #fff;}
+.tipovacky-item .tipovacky-caption .tipovacky-caption-heading {font-size: 1rem; text-transform: uppercase;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; margin-bottom: 0;}
+.tipovacky-item .tipovacky-caption .tipovacky-caption-subheading {font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+.tipovacky-item a {text-decoration: none;}
+
+/*** DataTables ***/
+.dt-buttons button {font-size: 12px;}
+
+@media (max-width: 768px) {
+    .sticky-top.navbar-dark {position: fixed; background: var(--dark) !important;}
+    .navbar-dark {position: absolute; width: 100%; top: 0; left: 0; z-index: 999; background: var(--dark) !important;}
+    .navbar-dark .navbar-collapse {margin-top: 15px; border-top: 1px solid rgba(255, 255, 255, .1)}
+    .navbar-dark .navbar-nav .nav-link, .sticky-top.navbar-dark .navbar-nav .nav-link {padding: 10px 0; margin-left: 0;}
+    .navbar-dark .navbar-brand img {max-height: 30px;}
+    .sticky-top.navbar-dark .navbar-brand img {max-height: 30px;}
+}
+
+@media (min-width: 768px) {
+    .navbar-dark {position: absolute; width: 100%; top: 0; left: 0; z-index: 999; background: var(--dark) !important;}
+    .sticky-top.navbar-dark {position: fixed; background: var(--dark) !important;}
+    header.masthead {padding-top: 10rem; padding-bottom: 10rem;}
+    header.masthead .masthead-subheading {font-size: 2.25rem; font-style: italic; line-height: 2.25rem; margin-bottom: 2rem;}
+    header.masthead .masthead-heading {font-size: 4.5rem; font-weight: 700; line-height: 4.5rem; margin-bottom: 1rem;}
+}
+
+.smallsquare-cenik{max-width: 80px; height: auto; flex: 0 0 80%; padding-top: 80px; display: grid; position: relative;}
+.img-grid-c{width: 100%; height: 100%; top: 0; left: 0; position: absolute; object-fit: cover; object-position: center; padding: 3px;}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, .5);
+}
+
+/*** Section Title ***/
+.section-title {position: relative; display: inline-block;}
+.section-title::before {position: absolute; content: ""; width: 45px; height: 2px; top: 50%; left: -55px; margin-top: -1px; background: var(--danger);}
+.section-title::after {position: absolute; content: ""; width: 45px; height: 2px; top: 50%; right: -55px; margin-top: -1px; background: var(--danger);}
+.section-title.text-start::before, .section-title.text-end::after {display: none;}
+
+/*** Staticke texty - dodatecne css ***/
+.stattext {text-align: left; font-size: 13px;}
+.stattext p {text-align: left;}
+.stattext ol li {margin: 2px 0;}
+.stattext ul li {margin: 2px 0;}
+.stattext p span.text-big, .stattext p span.text-big strong {font-size: 18px;}
+.stattext figure > img{width:100%; min-height:100%;}
+
+
+
+/*** Service ***/
+.service-item {box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: .5s;}
+.service-item:hover {background: var(--primary);}
+.service-item * {transition: .5s;}
+.service-item:hover * {color: var(--light) !important;}
+
+/*** Footer ***/
+.footer .btn.btn-social {margin-right: 5px; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; color: var(--light);
+    border: 1px solid #FFFFFF; border-radius: 35px; transition: .3s;}
+.footer .btn.btn-social:hover {color: var(--primary);}
+.footer .btn.btn-link { display: block; margin-bottom: 5px; padding: 0; text-align: left; color: #FFFFFF; font-size: 15px; font-weight: normal;
+    text-transform: uppercase; transition: .3s; text-decoration: none;}
+.footer .btn.btn-link::before {position: relative; content: ">"; font-family: serif; font-weight: 900; margin-right: 10px;}
+.footer .btn.btn-link:hover {letter-spacing: 1px; box-shadow: none;}
+.footer .copyright {padding: 15px 0; font-size: 15px; border-top: 1px solid rgba(256, 256, 256, .1);}
+.footer .copyright a {color: var(--light);}
+.footer .footer-menu a { margin-right: 15px; padding-right: 15px; border-right: 1px solid rgba(255, 255, 255, .1);}
+.footer .footer-menu a:last-child { margin-right: 0; padding-right: 0; border-right: none;}
